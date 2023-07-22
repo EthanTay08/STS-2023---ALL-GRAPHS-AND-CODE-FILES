@@ -288,9 +288,8 @@ def graphSequenceAverages(ax, sequence, colour, entries):
 DATASTRUCTURE = [[NAME, AGE, TOUCHTYPER, RULERSCORE, ['COLOUR1', ['SEQUENCE1']], ['COLOUR2', ['SEQUENCE2']]],[NAME, AGE, TOUCHTYPER, RULERSCORE, ['COLOUR1', ['SEQUENCE1']], ['COLOUR2', ['SEQUENCE2']]]]
 
 data1 = importJson("results")
-data2 = importJson("results_colour_first")
 
-sortedData = sortData(data1, data2)
+sortedData = sortData(data1, [])
 
 getAllRanges(sortedData)
 graphAverages(sortedData)
